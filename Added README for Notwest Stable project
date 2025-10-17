@@ -1,0 +1,29 @@
+# Notwest-stable
+A decentralized app for managing assets securely on the Solana blockchain.”
+# 🪙 Notwest Stable
+
+**Notwest Stable** is a decentralized stablecoin protocol built on the **Solana blockchain**.  
+It aims to provide a **secure, transparent, and low-volatility** digital asset for users and developers in the Web3 ecosystem.
+
+## 🚀 Overview
+Notwest Stable allows users to mint and redeem stable tokens backed by digital reserves.  
+The goal is to make stable value transfer faster, cheaper, and accessible to everyone on Solana.
+
+## 💡 Features
+- 🌐 Built on Solana for fast and low-cost transactions  
+- 🔒 Transparent smart contract-based reserve system  
+- 💱 Seamless swap between stable assets  
+- 🧩 Open-source and community-driven
+
+## 🧰 Tech Stack
+- **Frontend:** React + Tailwind CSS  
+- **Smart Contracts:** Rust / Solana Program Library  
+- **Backend:** Node.js  
+
+## 🧠 Vision
+To make decentralized finance (DeFi) safer and more practical through secure, transparent stablecoin infrastructure.
+
+## 🧾 License
+MIT License © 2025 Notwest Labs
+
+
