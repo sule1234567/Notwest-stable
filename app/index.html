@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notwest Stable</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4b0082, #000);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 { color: #c29eff; }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      width: 300px;
+    }
+    input {
+      width: 80%;
+      padding: 8px;
+      border: none;
+      border-radius: 6px;
+      margin: 5px 0;
+    }
+    button {
+      background: #7b42f6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px;
+      width: 100%;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #9b6cff;
+    }
+  </style>
+</head>
+<body>
+  <h1>💎 Notwest Stable</h1>
+  <div class="card">
+    <p id="balance">Balance: 0</p>
+    <input type="number" id="amount" placeholder="Enter amount" />
+    <button onclick="deposit()">Deposit</button>
+    <button onclick="withdraw()">Withdraw</button>
+  </div>
+
+  <script>
+    let balance = 100; // Mock balance for demo
+
+    function updateBalance() {
+      document.getElementById("balance").textContent = "Balance: " + balance;
+    }
+
+    function deposit() {
+      const amount = parseFloat(document.getElementById("amount").value);
+      if (!amount || amount <= 0) return alert("Enter valid amount!");
+      balance += amount;
+      updateBalance();
+      alert("Deposited " + amount + " successfully!");
+    }
+
+    function withdraw() {
+      const amount = parseFloat(document.getElementById("amount").value);
+      if (!amount || amount <= 0) return alert("Enter valid amount!");
+      if (amount > balance) return alert("Insufficient balance!");
+      balance -= amount;
+      updateBalance();
+      alert("Withdrawn " + amount + " successfully!");
+    }
+
+    updateBalance();
+  </script>
+</body>
+</html
